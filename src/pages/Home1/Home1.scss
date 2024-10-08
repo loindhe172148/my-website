@@ -1,4 +1,3 @@
-
 .textHome {
   margin-top: 133px;
   h1 {
@@ -46,8 +45,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 25px 50px 25px #F6F7FF;
-
+  box-shadow: 0px 25px 50px 25px #f6f7ff;
+  background-color: #ffffff;
+  opacity: 1;
   transition: box-shadow 0.3s ease;
   border-radius: 42px;
 
@@ -218,8 +218,9 @@
     width: 424px;
     height: 626px;
     padding: 0px 51px;
-    box-shadow: 0px 25px 50px 25px #F6F7FF;
-
+    box-shadow: 0px 25px 50px 25px #f6f7ff;
+    background-color: #ffffff;
+    opacity: 1;
   }
   .mentor-title {
     font-weight: 600; // Font-weight cho tiêu đề
@@ -428,14 +429,14 @@
     margin-right: auto;
   }
 }
-.p1{
+.p1 {
   background-image: url("./img/Background\ Bubble.png");
   background-size: 66% 80%;
   background-position-x: 100%;
   background-position-y: 98%;
   background-repeat: no-repeat;
 }
-.p2{
+.p2 {
   background-image: url("./img/123.png");
   background-size: 83% 60%;
   background-position-x: 0%;

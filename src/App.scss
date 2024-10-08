@@ -1,0 +1,66 @@
+@import "normalize.css";
+@import "~bootstrap/scss/bootstrap"; /* Bootstrap */
+@import "./components/Footer/Footer.scss"; /* SCSS for Footer */
+@import "./components/HeaderHome1/HeaderHome1.scss";
+@import "./components/HeaderHome2/HeaderHome2.scss";
+@import "./components/SharedHeader/SharedHeader.scss"; /* SCSS for Header */
+@import "./pages/About/About.scss";
+@import "./pages/Blog/Blog.scss";
+@import "./pages/Contact/Contact.scss";
+@import "./pages/Gallery/Gallery.scss";
+@import "./pages/Home1/Home1.scss";
+@import "./pages/Home2/Home2.scss";
+@import "./pages/Services/Services.scss";
+@import "./pages/Team/Team.scss";
+/* Reset CSS thông dụng */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    line-height: 1;
+    font-family: "Poppins",sans-serif;
+  }
+  
+  ul, ol {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  button, input {
+    border: none;
+    background: none;
+    font: inherit;
+    outline: none;
+  }
+  
+  /* Reset thêm cho các thẻ đặc biệt */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  blockquote, q {
+    quotes: none;
+  }
+  
+  blockquote::before, blockquote::after, q::before, q::after {
+    content: '';
+  }
+  

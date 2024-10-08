@@ -1,0 +1,264 @@
+.styled-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 23px;
+  @media (min-width: 1440px) {
+    padding-left: 134px;
+  }
+}
+
+.styled-navbar-brand {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.styled-navbar-toggle {
+  @media (max-width: 991px) {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17px;
+  }
+}
+
+.styled-navbar-collapse {
+  @media (max-width: 991px) {
+    background-color: rgb(185, 185, 185);
+    border-radius: 20px;
+    position: absolute;
+    top: 100%;
+    right: 10px;
+    width: 30%;
+    background-color: #fff;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    border: 1px solid black;
+  }
+}
+
+.styled-logo {
+  @media (min-width: 769px) {
+    margin-top: 6px;
+  }
+
+  @media (max-width: 425px) {
+    height: 100%;
+    width: 90%;
+  }
+}
+
+.home1-link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1.6px;
+  color: #414880 !important;
+  margin-top: 21px;
+  @media (min-width: 1440px) {
+    margin-left: 19px;
+  }
+
+  @media (min-width: 769px) {
+    text-align: start;
+  }
+
+  @media (max-width: 991px) {
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+}
+
+/* Các lớp CSS cho home2-link, home3-link, home4-link, home5-link, home6-link */
+.home2-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1.6px;
+  color: #8b8b8b;
+  margin-top: 21px;
+  margin-left: 27px;
+  @media (max-width: 1088px) {
+    margin-left: 15px;
+  }
+  @media (max-width: 991px) {
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+}
+.home3-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1.6px;
+  color: #8b8b8b;
+  margin-top: 21px;
+  margin-left: 28px;
+  @media (max-width: 1088px) {
+    margin-left: 15px;
+  }
+  @media (max-width: 991px) {
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+}
+.home4-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1.6px;
+  color: #8b8b8b;
+  margin-top: 21px;
+  margin-left: 30px;
+  @media (max-width: 1088px) {
+    margin-left: 15px;
+  }
+  @media (max-width: 991px) {
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+}
+.home5-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1.6px;
+  color: #8b8b8b;
+  margin-top: 21px;
+  margin-left: 31px;
+  @media (max-width: 1088px) {
+    margin-left: 15px;
+  }
+  @media (max-width: 991px) {
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+}
+.home6-link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1.6px;
+  color: #8b8b8b;
+  background-color: #ff64ae;
+  padding: 12px 40px 15px 40px !important;
+  color: white;
+  border-radius: 42px;
+  margin-top: 15px;
+  margin-left: 43px;
+  @media (max-width: 1088px) {
+    margin-left: 15px;
+  }
+  @media (max-width: 991px) {
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding: 8px 0px !important;
+    background-color: white;
+    color: #8b8b8b;
+  }
+}
+.main-header {
+  display: flex;
+  justify-content: center;
+  margin-top: 134px;
+  gap: 25px;
+  padding-left: 37px;
+  @media (max-width: 992px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    padding-left: 0px;
+    margin: 100px 10px;
+  }
+}
+.header-right {
+  margin-left: 10px;
+  @media (max-width: 992px) {
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  // img{
+  //   width: 601.5px;
+  //   height: 397.5px;
+  // }
+}
+.header-left {
+  margin-top: 57px;
+  @media (max-width: 992px) {
+    margin: 0px auto;
+  }
+}
+
+.clinic-heading {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 600;
+  color: #091156;
+
+  @media (max-width: 992px) {
+    text-align: center;
+  }
+}
+
+.note-clinic {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #091156;
+  letter-spacing: 1.6px;
+  margin-bottom: 54px;
+  @media (max-width: 992px) {
+    text-align: center;
+  }
+  @media (max-width: 480px) {
+    br {
+      display: none;
+    }
+  }
+}
+
+.more-detail-link {
+  padding: 16px 40px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 50px;
+  background-color: rgb(255, 100, 174);
+  color: white;
+  letter-spacing: 2px;
+  margin-top: 50px;
+  margin-left: -2px;
+  @media (max-width: 992px) {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+  }
+  @media (max-width: 424px) {
+    padding: 16px 0px;
+  }
+}
+
+.slider-button {
+  /* Thêm các thuộc tính CSS cho nút slider tại đây */
+  width: 100%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  padding-top: 135px;
+  @media (max-width: 992px) {
+    padding: 0px;
+  }
+}

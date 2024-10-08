@@ -1,8 +1,16 @@
+
+.header-home1{
+  background-image: url("./Slide Background.png");
+  background-repeat: no-repeat;
+  background-size: 88% 93%;
+  height: 100%;
+  width: 100%;
+}
 .styled-navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 23px;
+  padding-top: 31px;
   @media (min-width: 1440px) {
     padding-left: 134px;
   }

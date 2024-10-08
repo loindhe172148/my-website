@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import styled from "styled-components";
 import "./Home1.scss";
 
 const mentors = [
@@ -47,7 +46,6 @@ const Home1 = () => {
         </h3>
       </div>
       <div className="p1">
-      <P1>
         <div className="threeBox">
           <div className="box">
             <img src="imgHome1/Animation1 (1).png" alt="Beauty consultation" />
@@ -117,10 +115,8 @@ const Home1 = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.
           </h3>
         </div>
-      </P1>
       </div>
       <div className="p2">
-      <P2>
         <div className="threeMentor">
           {mentors.map((mentor, index) => (
             <div
@@ -194,23 +190,9 @@ const Home1 = () => {
             </div>
           </div>
         </div>
-      </P2>
       </div>
     </div>
   );
 };
-const P1 = styled.div`
-  background-image: url("./img/Background\ Bubble.png");
-  background-size: 66% 80%;
-  background-position-x: 100%;
-  background-position-y: 98%;
-  background-repeat: no-repeat;
-`;
-const P2 = styled.div`
-  background-image: url("./img/123.png");
-  background-size: 83% 60%;
-  background-position-x: 0%;
-  background-position-y: 85%;
-  background-repeat: no-repeat;
-`;
+
 export default Home1;

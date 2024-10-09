@@ -181,7 +181,7 @@ const Home1 = () => {
                 />
               </div>
               <div className="form-row2">
-                <textarea
+                <textarea   style={{ resize: "none" }}
                   placeholder="Your inquiry here"
                   className="form-input3  "
                 />

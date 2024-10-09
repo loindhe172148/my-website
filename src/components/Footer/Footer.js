@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="footer-wrapper">
         <div className="container-fluid">
           <div className="footer-section">
-            <div className="">
+            <div className="footer-left">
               <img
                 src="imgHome1/Footer Logo.png"
                 alt="Footer Logo"
@@ -34,6 +34,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
+            <div className="footer-right">
             <div className="footer-list-col">
               <ul className="footer-list1">
                 <li className="footer-list-item1">Pages</li>
@@ -75,6 +76,7 @@ const Footer = () => {
                   Contact
                 </li>
               </ul>
+            </div>
             </div>
           </div>
           <button className="scroll-to-top-button" onClick={scrollToTop}>

@@ -7,10 +7,10 @@ const HeaderHome2 = () => {
     <header className="header-home2">
       <>
         <div className="slider2">
-          <Navbar expand="lg" className="styled-navbar2">
+          <Navbar expand="xl" className="styled-navbar2">
             <Container>
               <Row className="w-100">
-                <Col lg={3} xs={10}>
+                <Col xl={3} xs={10}>
                   <Navbar.Brand href="/" className="styled-navbar-brand2">
                     <img
                       src="/imgHome2/Main Logo (1).png"
@@ -19,7 +19,7 @@ const HeaderHome2 = () => {
                     />
                   </Navbar.Brand>
                 </Col>
-                <Col lg={5} xs={2}>
+                <Col xl={5} xs={2}>
                   <Navbar.Toggle
                     aria-controls="basic-navbar-nav"
                     className="styled-navbar-toggle2"
@@ -47,6 +47,7 @@ const HeaderHome2 = () => {
                       <Nav.Link href="/blog" className="home5-link2">
                         Blog
                       </Nav.Link>
+
                       <Nav.Link href="/contact" className="home6-link2">
                         Contact
                       </Nav.Link>

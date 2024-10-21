@@ -5,10 +5,10 @@ import { Navbar, Nav, Container, Col, Row } from "react-bootstrap";
 const SharedHeader = () => {
   return (
     <header className="shared-header">
-      <Navbar expand="lg" className="styled-navbar">
+      <Navbar expand="xl" className="styled-navbar">
         <Container>
           <Row className="w-100">
-            <Col lg={3} xs={10}>
+            <Col xl={4} xs={10}>
               <Navbar.Brand href="/" className="styled-navbar-brand">
                 <img
                   src="/imgHome1/Main Logo.png"
@@ -17,7 +17,7 @@ const SharedHeader = () => {
                 />
               </Navbar.Brand>
             </Col>
-            <Col lg={5} xs={2}>
+            <Col xl={6} xs={2}>
               <Navbar.Toggle
                 aria-controls="basic-navbar-nav"
                 className="styled-navbar-toggle"
@@ -36,6 +36,7 @@ const SharedHeader = () => {
                   <Nav.Link href="/service" className="home3-link">
                     Service
                   </Nav.Link>
+
                   <Nav.Link href="/gallery" className="home4-link">
                     Gallery
                   </Nav.Link>

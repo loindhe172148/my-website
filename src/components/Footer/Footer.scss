@@ -14,17 +14,17 @@
   @media (min-width: 1440px) {
     padding-top: 191px;
   }
-
+  @media (max-width: 1053px) {
+    background-size: cover !important;
+  }
   @media (max-width: 768px) {
     padding: 50px 0;
     padding-top: 120px;
-    background-size: contain;
   }
 
   @media (max-width: 461px) {
     padding: 20px 0;
     padding-top: 100px;
-    background-size: cover !important;
   }
 }
 
@@ -81,12 +81,12 @@
   width: 258px;
   height: 63px;
   margin-top: 25px;
- display: flex;
- align-items: start;
- @media (max-width:461px) {
-  align-items: center;
-  margin: 0 auto;
- }
+  display: flex;
+  align-items: start;
+  @media (max-width: 461px) {
+    align-items: center;
+    margin: 0 auto;
+  }
 }
 
 .footer-text1 {
@@ -247,7 +247,7 @@
   background-size: 100% 35%;
   box-sizing: border-box;
 }
-.footer-right{
+.footer-right {
   display: flex;
   justify-content: center;
   gap: 14.31vw;

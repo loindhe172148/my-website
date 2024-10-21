@@ -31,9 +31,6 @@
   margin-top: 87px;
   gap: 54px;
   @media (max-width: 1155px) {
-    gap: 10px;
-  }
-  @media (max-width: 1076px) {
     flex-direction: column;
     gap: 80px;
   }
@@ -436,16 +433,20 @@
   }
 }
 .p1 {
-  background-image: url("./img/Background\ Bubble.png");
-  background-size: 66% 80%;
-  background-position-x: 100%;
-  background-position-y: 98%;
-  background-repeat: no-repeat;
+  @media (max-width: 1440px) and (min-width: 1155px) {
+    background-image: url("./img/Background\ Bubble.png");
+    background-size: 66% 80%;
+    background-position-x: 100%;
+    background-position-y: 98%;
+    background-repeat: no-repeat;
+  }
 }
 .p2 {
-  background-image: url("./img/123.png");
-  background-size: 83% 60%;
-  background-position-x: 0%;
-  background-position-y: 85%;
-  background-repeat: no-repeat;
+  @media (max-width: 1440px) and (min-width: 1150px) {
+    background-image: url("./img/123.png");
+    background-size: 83% 60%;
+    background-position-x: 0%;
+    background-position-y: 85%;
+    background-repeat: no-repeat;
+  }
 }

@@ -1,9 +1,9 @@
-
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   activeMentor: 1, 
   currentIndex: 0,
+  images: [], // Initialize with an empty array
 };
 
 const teamSlice = createSlice({
@@ -14,10 +14,14 @@ const teamSlice = createSlice({
       state.activeMentor = action.payload;
     },
     nextImage: (state) => {
-      state.currentIndex = (state.currentIndex + 1) % state.images.length;
+      if (state.images.length > 0) {  // Check if images array is not empty
+        state.currentIndex = (state.currentIndex + 1) % state.images.length;
+      }
     },
     prevImage: (state) => {
-      state.currentIndex = (state.currentIndex - 1 + state.images.length) % state.images.length;
+      if (state.images.length > 0) {  // Check if images array is not empty
+        state.currentIndex = (state.currentIndex - 1 + state.images.length) % state.images.length;
+      }
     },
     setImages: (state, action) => {
       state.images = action.payload; 

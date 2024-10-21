@@ -214,10 +214,10 @@
   @media (max-width: 1216px) {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     margin-left: 0px;
   }
-  @media (max-width: 740px) {
+  @media (max-width:867px) {
     flex-direction: column;
   }
 }

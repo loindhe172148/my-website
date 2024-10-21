@@ -136,7 +136,7 @@ const Home2 = () => {
         </div>
         <div className="home2_bg2">
           <div className="home2_3mentor">
-            <div class="mentor_3">
+            <div className="mentor_3">
                         <img src="imgHome2/unsplash_3ewkNkfJj2k.png" alt="" />
 
               <h1>
@@ -156,7 +156,7 @@ const Home2 = () => {
                 />
               </h3>
             </div>
-            <div class=" mentor_3">
+            <div className=" mentor_3">
               <img src="imgHome2/unsplash_7tDGb3HrITg.png" alt="" />
               <h1>Watch out! don't choose the wrong beauty product</h1>
               <h2>
@@ -174,7 +174,7 @@ const Home2 = () => {
                 />
               </h3>
             </div>
-            <div class="mentor_3">
+            <div className="mentor_3">
               <img src="imgHome2/unsplash_0_McYfdyEDA.png" alt="" />
               <h1>
                 About skin care you need to

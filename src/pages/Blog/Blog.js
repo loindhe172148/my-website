@@ -15,7 +15,7 @@ const Blog = () => {
         </div>
         <div className="blog_flex1">
           <div>
-            <div class="blog_mentor_3">
+            <div className="blog_mentor_3">
               <img
                 src="imgBlog/unsplash_3ewkNkfJj2k (2).png"
                 className="blog_3mentor_img1"
@@ -44,7 +44,7 @@ const Blog = () => {
               />
             </div>
 
-            <div class="blog_mentor_3">
+            <div className="blog_mentor_3">
               <img
                 src="imgBlog/unsplash_7tDGb3HrITg (1).png"
                 className="blog_3mentor_img1"
@@ -74,7 +74,7 @@ const Blog = () => {
               />
             </div>
 
-            <div class="blog_mentor_3">
+            <div className="blog_mentor_3">
               <img
                 src="imgBlog/unsplash_0_McYfdyEDA (1).png"
                 className="blog_3mentor_img1"

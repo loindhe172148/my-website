@@ -433,7 +433,7 @@
   }
 }
 .p1 {
-  @media (max-width: 1440px) and (min-width: 1155px) {
+  @media (min-width: 1155px) {
     background-image: url("./img/Background\ Bubble.png");
     background-size: 66% 80%;
     background-position-x: 100%;
@@ -442,7 +442,7 @@
   }
 }
 .p2 {
-  @media (max-width: 1440px) and (min-width: 1150px) {
+  @media (min-width: 1150px) {
     background-image: url("./img/123.png");
     background-size: 83% 60%;
     background-position-x: 0%;

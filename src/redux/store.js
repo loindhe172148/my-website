@@ -1,8 +1,18 @@
-import { configureStore } from '@reduxjs/toolkit';
-import exampleReducer from './slices/exampleSlice';
+import { configureStore } from "@reduxjs/toolkit";
+import mentorReducer from "./slices/mentorSlice";
+import contactReducer from "./slices/contactSlice";
+import activeBoxReducer from "./slices/activeBoxSlice";
+import servicesReducer from './slices/servicesSlice';
+import teamReducer from './slices/teamSlice';
 
-export const store = configureStore({
+const store = configureStore({
   reducer: {
-    example: exampleReducer,
+    mentor: mentorReducer,
+    contact: contactReducer,
+    activeBox: activeBoxReducer,
+    services: servicesReducer,
+    team: teamReducer,
   },
 });
+
+export default store;

@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Contact.scss";
+import { useSelector, useDispatch } from "react-redux";
+import { setActiveInfo } from "../../redux/slices/contactSlice";
 const infos = [
   {
     imgSrc: "imgContact/map-marker-alt.png",
@@ -24,10 +26,11 @@ const infos = [
   },
 ];
 const Contact = () => {
-  const [activeinfo, setActiveinfo] = useState(1);
+  const activeInfo = useSelector((state) => state.contact.activeInfo); 
+  const dispatch = useDispatch();
 
   const handleClick = (index) => {
-    setActiveinfo(index);
+    dispatch(setActiveInfo(index)); 
   };
   return (
     <div className="contact">
@@ -105,9 +108,9 @@ const Contact = () => {
         <div className="contact_threeinfo">
           {infos.map((info, index) => (
             <div
-              className={`contact_info ${activeinfo === index ? "active" : ""}`} // Optional active class for styling
+              className={`contact_info ${activeInfo === index ? "active" : ""}`} // Kết nối Redux state
               key={index}
-              onClick={() => handleClick(index)} // Handle click to set active
+              onClick={() => handleClick(index)} // Kết nối Redux dispatch
             >
               <div className="contact_info1">
                 <img src={info.imgSrc} alt={info.title} />

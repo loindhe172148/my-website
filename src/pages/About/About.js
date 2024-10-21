@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./About.scss";
+import { useSelector, useDispatch } from "react-redux";
+import { setActiveMentor } from "../../redux/slices/mentorSlice";
 const mentors = [
   {
     imgSrc: "imgHome1/unsplash_pTrhfmj2jDA.png",
@@ -24,10 +26,11 @@ const mentors = [
   },
 ];
 const About = () => {
-  const [activeMentor, setActiveMentor] = useState(1); // Mặc định là mentor thứ hai
+  const activeMentor = useSelector((state) => state.mentor.activeMentor); 
+  const dispatch = useDispatch();
 
   const handleClick = (index) => {
-    setActiveMentor(index); // Cập nhật mentor đang active khi click
+    dispatch(setActiveMentor(index)); 
   };
   return (
     <div className="about">
@@ -65,8 +68,8 @@ const About = () => {
             <div className="threeMentor">
               {mentors.map((mentor, index) => (
                 <div
-                  className={`mentor ${activeMentor === index ? "active" : ""}`}
-                  onClick={() => handleClick(index)}
+                  className={`mentor ${activeMentor === index ? "active" : ""}`} 
+                  onClick={() => handleClick(index)} 
                   key={index}
                 >
                   <img
@@ -101,76 +104,76 @@ const About = () => {
           </h3>
         </div>
         <div className="about_bg2">
-        <div className="about_sectionvison">
-          <div>
-            <img src="imgAbout/Illustration-1 (1).png" alt="" />
+          <div className="about_sectionvison">
+            <div>
+              <img src="imgAbout/Illustration-1 (1).png" alt="" />
+            </div>
+            <div className="about_textvision">
+              <h1>Our Vision</h1>
+              <h2>
+                Be the best and go <br />
+                international
+              </h2>
+              <h3>
+                Lorem ipsum dolor sit amet, consectetur
+                <br />
+                adipiscing elit. Elit, quam suscipit purus donec
+                <br />
+                amet. Egestas volutpat facilisi eu libero.
+                <br />
+                <span style={{ display: "block", marginBottom: 25 }} />
+                Nunc, ipsum ornare mauris sit quam quis enim.
+                <br />
+                Varius tellus in suspendisse placerat.
+              </h3>
+            </div>
           </div>
-          <div className="about_textvision">
-            <h1>Our Vision</h1>
-            <h2>
-              Be the best and go <br />
-              international
-            </h2>
-            <h3>
-              Lorem ipsum dolor sit amet, consectetur
-              <br />
-              adipiscing elit. Elit, quam suscipit purus donec
-              <br />
-              amet. Egestas volutpat facilisi eu libero.
-              <br />
-              <span style={{ display: "block", marginBottom: 25 }} />
-              Nunc, ipsum ornare mauris sit quam quis enim.
-              <br />
-              Varius tellus in suspendisse placerat.
-            </h3>
+          <div className="about_sectionmisison">
+            <div className="about_textvision">
+              <h1>Our Mission</h1>
+              <h2>
+                Special & premium service
+                <br /> to any clients
+              </h2>
+              <h3>
+                Lorem ipsum dolor sit amet, consectetur
+                <br />
+                adipiscing elit. Elit, quam suscipit purus donec
+                <br />
+                amet. Egestas volutpat facilisi eu libero.
+                <br />
+                <span style={{ display: "block", marginBottom: 22 }} />
+                Nunc, ipsum ornare mauris sit quam quis enim.
+                <br />
+                Varius tellus in suspendisse placerat.
+              </h3>
+            </div>
+            <div>
+              <img src="imgAbout/Illustration-2.png" alt="" />
+            </div>
           </div>
-        </div>
-        <div className="about_sectionmisison">
-          <div className="about_textvision">
-            <h1>Our Mission</h1>
-            <h2>
-              Special & premium service
-              <br /> to any clients
-            </h2>
-            <h3>
-              Lorem ipsum dolor sit amet, consectetur
-              <br />
-              adipiscing elit. Elit, quam suscipit purus donec
-              <br />
-              amet. Egestas volutpat facilisi eu libero.
-              <br />
-              <span style={{ display: "block", marginBottom: 22 }} />
-              Nunc, ipsum ornare mauris sit quam quis enim.
-              <br />
-              Varius tellus in suspendisse placerat.
-            </h3>
+          <div className="about_sectionclients">
+            <h1>Our Clients</h1>
+            <h2>Well-known agencies</h2>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
           </div>
-          <div>
-            <img src="imgAbout/Illustration-2.png" alt="" />
+          <div className="about_logo">
+            <div>
+              <img src="imgAbout/LOGO1.png" alt="" />
+            </div>
+            <div>
+              <img src="imgAbout/LOGO2.png" alt="" />
+            </div>
+            <div>
+              <img src="imgAbout/LOGO3.png" alt="" />
+            </div>
+            <div>
+              <img src="imgAbout/LOGO4.png" alt="" />
+            </div>
+            <div>
+              <img src="imgAbout/LOGO5.png" alt="" />
+            </div>
           </div>
-        </div>
-        <div className="about_sectionclients">
-          <h1>Our Clients</h1>
-          <h2>Well-known agencies</h2>
-          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
-        </div>
-        <div className="about_logo">
-          <div>
-            <img src="imgAbout/LOGO1.png" alt="" />
-          </div>
-          <div>
-            <img src="imgAbout/LOGO2.png" alt="" />
-          </div>
-          <div>
-            <img src="imgAbout/LOGO3.png" alt="" />
-          </div>
-          <div>
-            <img src="imgAbout/LOGO4.png" alt="" />
-          </div>
-          <div>
-            <img src="imgAbout/LOGO5.png" alt="" />
-          </div>
-        </div>
         </div>
       </>
     </div>

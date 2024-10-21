@@ -1,8 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import "./Team.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-
+import { useSelector, useDispatch } from "react-redux";
+import {
+  setActiveMentor,
+  nextImage,
+  prevImage,
+  setImages,
+} from "../../redux/slices/teamSlice";
 const mentors = [
   {
     imgSrc: "/imgHome1/unsplash_pTrhfmj2jDA.png",
@@ -28,30 +34,29 @@ const mentors = [
 ];
 
 const Team = () => {
-  const [activeMentor, setActiveMentor] = useState(1); // Mặc định là mentor thứ hai
+  const dispatch = useDispatch();
+  const { activeMentor, currentIndex, images } = useSelector((state) => state.team);
+  useEffect(() => {
+    const initialImages = [
+      "/imgTeam/unsplash_y2T5hT7pWx4.png",
+      "/imgTeam/unsplash_W7b3eDUb_2I.png",
+      "/imgTeam/unsplash_y2T5hT7pWx41.png",
+    ];
+    dispatch(setImages(initialImages)); // Thiết lập hình ảnh ban đầu
+  }, [dispatch]);
 
   const handleClick = (index) => {
-    setActiveMentor(index); // Cập nhật mentor đang active khi click
-  };
-  const images = [
-    "/imgTeam/unsplash_y2T5hT7pWx4.png",
-    "/imgTeam/unsplash_W7b3eDUb_2I.png",
-    "/imgTeam/unsplash_y2T5hT7pWx41.png",
-  ];
-
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  // const showImage = (index) => {
-  //   setCurrentIndex(index);
-  // };
-
-  const nextImage = () => {
-    setCurrentIndex((currentIndex + 1) % images.length);
+    dispatch(setActiveMentor(index)); // Cập nhật mentor đang active khi click
   };
 
-  const prevImage = () => {
-    setCurrentIndex((currentIndex - 1 + images.length) % images.length);
+  const nextImageHandler = () => {
+    dispatch(nextImage());
   };
+
+  const prevImageHandler = () => {
+    dispatch(prevImage());
+  };
+
   return (
     <div className="team">
       <>
@@ -65,24 +70,24 @@ const Team = () => {
             </h3>
           </div>
           <div className="threeMentor">
-            {mentors.map((mentor, index) => (
-              <div
-                className={`mentor ${activeMentor === index ? "active" : ""}`}
-                onClick={() => handleClick(index)}
-                key={index}
-              >
-                <img className="img1" src={mentor.imgSrc} alt={mentor.title} />
-                <h1 className="mentor-title">{mentor.title}</h1>
-                <h2 className="mentor-name">{mentor.name}</h2>
-                <p className="mentor-description">{mentor.description}</p>
-                <img
-                  className="img2"
-                  src="imgHome1/Social Media (1).png"
-                  alt=""
-                />
-              </div>
-            ))}
-          </div>
+          {mentors.map((mentor, index) => (
+            <div
+              className={`mentor ${activeMentor === index ? "active" : ""}`}
+              onClick={() => handleClick(index)}
+              key={index}
+            >
+              <img className="img1" src={mentor.imgSrc} alt={mentor.title} />
+              <h1 className="mentor-title">{mentor.title}</h1>
+              <h2 className="mentor-name">{mentor.name}</h2>
+              <p className="mentor-description">{mentor.description}</p>
+              <img
+                className="img2"
+                src="imgHome1/Social Media (1).png"
+                alt=""
+              />
+            </div>
+          ))}
+        </div>
           <div className="team_assistance">
             <h1>Assistance Team</h1>
             <h2>Meet the pro assistance</h2>
@@ -169,9 +174,8 @@ const Team = () => {
           <FontAwesomeIcon
             icon={faArrowLeft}
             className="prev-arrow"
-            onClick={prevImage}
+            onClick={prevImageHandler}
           />
-
           <div className="testimonial-content">
             <img
               id="customer-photo"
@@ -192,14 +196,13 @@ const Team = () => {
               <img className="img2" src="/imgTeam/Star.png" alt="" />
             </div>
           </div>
-
           <FontAwesomeIcon
             icon={faArrowRight}
             className="next-arrow"
-            onClick={nextImage}
+            onClick={nextImageHandler}
           />
         </div>
-        </div>
+      </div>
       </>
     </div>
   );

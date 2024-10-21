@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Services.scss";
+import { useSelector, useDispatch } from "react-redux";
+import { toggleExpand } from "../../redux/slices/servicesSlice";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAngleDoubleRight,
@@ -7,42 +9,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Services = () => {
-  const [expanded, setExpanded] = useState([true, false, false, false]);
-  const [margins, setMargins] = useState(["30px", "-23px", "-22px", "25px"]); // Initial margin values
-  const toggleExpand = (index) => {
-    // Update the expanded state: toggle the clicked item and collapse others
-    const newExpanded = expanded.map((item, i) =>
-      i === index ? !item : false
-    );
-    setExpanded(newExpanded);
-
-    // Update margins: clicked item to 30px, all others to their original margins
-    const newMargins = margins.map((margin, i) => {
-      // If the item is clicked and expanded, set to 30px; otherwise, revert to original margin
-      return i === index
-        ? newExpanded[index]
-          ? "30px"
-          : getOriginalMargin(i)
-        : getOriginalMargin(i);
-    });
-    setMargins(newMargins);
-  };
-
-  // Function to return original margin values
-  const getOriginalMargin = (index) => {
-    switch (index) {
-      case 0:
-        return "-22px";
-      case 1:
-        return "-23px"; // or whatever the original value is
-      case 2:
-        return "-22px"; // or whatever the original value is
-      case 3:
-        return "25px"; // or whatever the original value is
-      default:
-        return "0px"; // Default case if needed
-    }
-  };
+  const dispatch = useDispatch();
+  const { expanded, margins } = useSelector((state) => state.services);
+ 
 
   return (
     <div className="services">
@@ -176,51 +145,50 @@ const Services = () => {
           </div>
         </div>
         <div className="service_faq-section">
-          <h2 className="service_faq-title">Services FAQ's</h2>
-
-          {[
-            "Is beauty consultation handled thoroughly?",
-            "Can I be beautiful in an instant time?",
-            "Are there any side effects to the treatment methods or treatments at this clinic?",
-            "Do professionals have accreditation in their respective fields?",
-          ].map((question, index) => (
-            <div
-              key={index}
-              className="service_faq-item"
-              style={{ marginBottom: margins[index] }} // Set dynamic margin-bottom
+        <h2 className="service_faq-title">Services FAQ's</h2>
+        {[
+          "Is beauty consultation handled thoroughly?",
+          "Can I be beautiful in an instant time?",
+          "Are there any side effects to the treatment methods or treatments at this clinic?",
+          "Do professionals have accreditation in their respective fields?",
+        ].map((question, index) => (
+          <div
+            key={index}
+            className="service_faq-item"
+            style={{ marginBottom: margins[index] }}
+          >
+            <button
+              className="service_faq-question"
+              aria-expanded={expanded[index]}
+              aria-controls={`faq-answer-${index}`}
+              onClick={() => dispatch(toggleExpand(index))}
             >
-              <button
-                className="service_faq-question"
-                aria-expanded={expanded[index]}
-                onClick={() => toggleExpand(index)}
-              >
-                {question}
-                <FontAwesomeIcon
-                  icon={faChevronDown}
-                  className="service_faq-icon"
-                />
-              </button>
-              <div
-                className="service_faq-answer"
-                style={{
-                  maxHeight: expanded[index] ? "216px" : "0px",
-                  visibility: expanded[index] ? "visible" : "hidden",
-                  overflow: "hidden",
-                }}
-              >
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-                  aliquam, purus sit amet luctus venenatis, lectus magna
-                  fringilla urna.
-                </p>
-                <p>
-                  Porttitor rhoncus dolor purus non enim praesent elementum
-                  facilisis leo, vel fringilla est ullamcorper eget nulla.
-                </p>
-              </div>
+              {question}
+              <FontAwesomeIcon icon={faChevronDown} className="service_faq-icon" />
+            </button>
+            <div
+              id={`faq-answer-${index}`}
+              className="service_faq-answer"
+              style={{
+                maxHeight: expanded[index] ? "216px" : "0px",
+                visibility: expanded[index] ? "visible" : "hidden",
+                overflow: "hidden",
+                transition: "max-height 0.3s ease",
+              }}
+            >
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                aliquam, purus sit amet luctus venenatis, lectus magna
+                fringilla urna.
+              </p>
+              <p>
+                Porttitor rhoncus dolor purus non enim praesent elementum
+                facilisis leo, vel fringilla est ullamcorper eget nulla.
+              </p>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
+      </div>
       </>
     </div>
   );

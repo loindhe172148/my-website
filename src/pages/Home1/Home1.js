@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Home1.scss";
+import { useSelector, useDispatch } from "react-redux";
+import { setActiveMentor } from "../../redux/slices/mentorSlice";
 
 const mentors = [
   {
@@ -26,10 +28,11 @@ const mentors = [
 ];
 
 const Home1 = () => {
-  const [activeMentor, setActiveMentor] = useState(1); // Mặc định là mentor thứ hai
+  const activeMentor = useSelector((state) => state.mentor.activeMentor); // Lấy trạng thái activeMentor từ Redux
+  const dispatch = useDispatch();
 
   const handleClick = (index) => {
-    setActiveMentor(index); // Cập nhật mentor đang active khi click
+    dispatch(setActiveMentor(index));
   };
   return (
     <div className="home1">
@@ -181,7 +184,8 @@ const Home1 = () => {
                 />
               </div>
               <div className="form-row2">
-                <textarea   style={{ resize: "none" }}
+                <textarea
+                  style={{ resize: "none" }}
                   placeholder="Your inquiry here"
                   className="form-input3  "
                 />

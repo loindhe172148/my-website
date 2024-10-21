@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home1 from './pages/Home1/Home1';
 import Home2 from './pages/Home2/Home2';
 import About from './pages/About/About';
-import Services from './pages/Services/Services';
+import Services from './pages/Services/Services.js';
 import Gallery from './pages/Gallery/Gallery';
 import Team from './pages/Team/Team';
 import Blog from './pages/Blog/Blog';
@@ -26,7 +26,7 @@ function App() {
         
         {/* Use SharedHeader for all other pages */}
         <Route path="/about" element={<><SharedHeader /><About /></>} />
-        <Route path="/services" element={<><SharedHeader /><Services /></>} />
+        <Route path="/service" element={<><SharedHeader /><Services /></>} />
         <Route path="/gallery" element={<><SharedHeader /><Gallery /></>} />
         <Route path="/team" element={<><SharedHeader /><Team /></>} />
         <Route path="/blog" element={<><SharedHeader /><Blog /></>} />

@@ -140,7 +140,7 @@ const Home2 = () => {
         <div className="home2_bg2">
           <div className="home2_3mentor">
             <div class="mentor_3">
-              <img src="imgHome2/unsplash_3ewkNkfJj2k.png" alt="" />
+                        <img src="imgHome2/unsplash_3ewkNkfJj2k.png" alt="" />
 
               <h1>
                 How much does a consultation <br /> cost at our clinic?

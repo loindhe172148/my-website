@@ -1,0 +1,307 @@
+.services_sectionoutservices h1 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ff64ae;
+  padding-top: 104px;
+  margin-bottom: 11px;
+}
+.services_sectionoutservices h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  color: #091156;
+  margin-bottom: 24px;
+}
+.services_sectionoutservices h3 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #8b8b8b;
+  letter-spacing: 1.6px;
+  margin-bottom: 73px;
+}
+.services_imageservices {
+  display: flex;
+  justify-content: center;
+  gap: 5.9vw;
+  margin-left: 0px;
+  margin-bottom: 69px;
+  @media (max-width: 1110px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.services_imageservices2 {
+  display: flex;
+  justify-content: center;
+  gap: 5.9vw;
+  margin-left: 0px;
+  margin-bottom: 69px;
+  @media (max-width: 1110px) {
+    flex-direction: column;
+    align-items: center;
+    div:nth-child(1) {
+      order: 2; // First image appears second
+    }
+
+    div:nth-child(2) {
+      order: 1; // Second image appears first
+    }
+  }
+}
+.services_textvision h1 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ff64ae;
+  margin-top: 30px;
+  margin-bottom: 11px;
+}
+.services_textvision h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  color: #091156;
+  margin-bottom: 14px;
+}
+.services_textvision h3 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8b8b8b;
+  letter-spacing: 1.6px;
+  margin-bottom: 24px;
+}
+.services_sectionvison {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 141px;
+  margin-right: 35px;
+  gap: 13.06vw;
+  @media (max-width: 1110px) {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0px;
+    .services_textvision {
+      order: 1; // This div will appear first
+    }
+
+    div:not(.services_textvision) {
+      order: 2; // This targets the image div to appear second
+    }
+  }
+}
+.services_sectionvison2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 91px;
+  margin-right: 0px;
+  gap: 15.35vw;
+}
+.services_sectionvison3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 92px;
+  margin-right: 35px;
+  gap: 13.06vw;
+  @media (max-width: 1110px) {
+    margin-right: 0px;
+  }
+}
+.services_sectionvison i {
+  margin-left: 5px;
+  color: #ff64ae;
+}
+.services_sectionvison h4 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1.6px;
+  color: #091156;
+}
+.services_textlogan h1 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 21px;
+}
+.services_textlogan h2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1.6px;
+  color: #cacaca;
+  position: relative;
+  z-index: 2;
+}
+.services_sectionslogan img {
+  position: relative;
+  z-index: 2;
+}
+.services_sectionslogan {
+  margin-top: 132px;
+  background-image: url(./unsplash_NPjNtTExSJ4.png);
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(9, 17, 86, 0.6);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  gap: 170px;
+  padding-top: 180px;
+  padding-bottom: 180px;
+  padding-right: 60px;
+  margin-bottom: 98px;
+  @media (max-width: 1110px) {
+    flex-direction: column;
+    align-items: center;
+    padding-right: 0px;
+    gap: 70px;
+    text-align: center;
+  }
+}
+.services_sectionslogan::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(
+    9,
+    17,
+    86,
+    0.6
+  ); /* Adds an overlay effect with transparency */
+  z-index: 1;
+}
+
+.service_faq-section {
+  width: 972px;
+  height: 552px;
+  margin: 118px auto;
+  margin-bottom: 111px;
+  @media (max-width: 986px) {
+    width: auto;
+    height: auto;
+  }
+}
+
+.service_faq-title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 45px;
+  margin-bottom: 68px;
+  color: #091156;
+  position: relative;
+  font-weight: 600;
+  padding-left: 8px;
+
+  &::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: #fc5c9c;
+    display: block;
+    margin: 15px auto 53px;
+    border: 3px solid #ff64ae;
+    border-radius: 5px;
+  }
+}
+.service_faq-question {
+  background-color: white;
+  font-weight: 600;
+  width: 972px;
+  padding: 0px 20px;
+  font-size: 16px;
+  text-align: left;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #091156;
+  letter-spacing: 1.6px;
+  line-height: 24px;
+  padding-left: 37px;
+  padding-right: 17px;
+  &[aria-expanded="true"] .service_faq-icon {
+    transform: rotate(180deg);
+  }
+  @media (max-width: 986px) {
+    width: auto;
+    height: auto;
+  }
+}
+
+.service_faq-icon {
+  font-size: 1.2em;
+  transition: transform 0.3s ease;
+  margin-right: 5px;
+}
+
+.service_faq-answer {
+  max-height: 0; // Collapsed state
+  visibility: hidden;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 0 20px;
+  background-color: #f6f7ff;
+  width: 972px;
+  border-top: 1px solid #091156;
+  padding: 53px 77px 0px 50px;
+  p {
+    color: #8b8b8b;
+    font-size: 14px;
+    line-height: 21px;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 1.44px;
+  }
+  p + p {
+    margin-top: 22px; // Adjust this value to increase or decrease the space
+  }
+  @media (max-width: 986px) {
+    width: auto;
+    height: auto;
+  }
+}
+
+.service_faq-question[aria-expanded="true"] + .service_faq-answer {
+  height: 216px;
+  padding: 53px 77px 0px 76px;
+  margin-top: 15px;
+  @media (max-width: 986px) {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    padding: 30px 40px 0px 30px;
+  }
+  @media (max-width: 427px) {
+    padding: 2px 5px;
+  }
+}
+
+.services_sectionoutservices {
+  background-image: url("./Bubble\ BG\ \(1\).png");
+  background-size: 100% 89%;
+  background-position-x: 0%;
+  background-position-y: 83%;
+  background-repeat: no-repeat;
+}

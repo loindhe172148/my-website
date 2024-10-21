@@ -1,0 +1,287 @@
+.team_textProfess {
+  margin-top: 104px;
+  margin-right: 79px;
+  margin-bottom: -16px;
+  @media (max-width: 1115px) {
+    margin-right: 0px;
+  }
+  h1 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #ff64ae;
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    color: #091156;
+  }
+  h3 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 1.6px;
+    color: #8b8b8b;
+    margin-top: 25px;
+  }
+}
+.team_assistance {
+  margin-bottom: 83px;
+}
+.team_assistance h1 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ff64ae;
+  margin-top: 148px;
+}
+.team_assistance h2 {
+  margin-top: 11px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  color: #091156;
+}
+.team_assistance h3 {
+  margin-top: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1.6px;
+  text-align: center;
+  color: #8b8b8b;
+}
+.team_assistanceproflie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11.88vw;
+  margin-right: 168px;
+  margin-bottom: 50px;
+  img {
+    margin-top: 29px;
+    width: 398px;
+    height: 253px;
+  }
+  h1 {
+    text-align: start;
+    margin-bottom: 16px;
+    margin-top: 8px;
+  }
+  h2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1.6px;
+    color: #8b8b8b;
+    text-align: start;
+  }
+  .team_name {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22.5px;
+    color: #091156;
+    text-align: start;
+  }
+  .team_title {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 17.5px;
+    color: #8b8b8b;
+    margin-left: 4px;
+  }
+  @media (max-width: 1115px) {
+    margin-right: 0px;
+  }
+  @media (max-width: 925px) {
+    flex-direction: column;
+  }
+  @media (max-width: 425px) {
+    width: 95%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    br {
+      display: none;
+    }
+    h1,
+    h2,
+    h3 {
+      text-align: center;
+    }
+  }
+}
+.team_sectionslogan h1 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+  margin-left: 22px;
+}
+.team_sectionslogan h2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  letter-spacing: 1.6px;
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+  @media (max-width: 635px) {
+    br {
+      display: none;
+    }
+  }
+}
+.team_sectionslogan {
+  background-image: url("./unsplash_rE6FqsyyqwM.png");
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(
+    9,
+    17,
+    86,
+    0.6
+  ); /* Adds a semi-transparent overlay color */
+  margin-top: 125px;
+  padding-top: 181px;
+  padding-bottom: 196px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Ensure text is readable */
+  text-align: center;
+}
+.team_sectionslogan::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(
+    9,
+    17,
+    86,
+    0.6
+  ); /* Adds an overlay effect with transparency */
+  z-index: 1;
+}
+
+.team_bg1 {
+  background-image: url("./Bubble\ BG\ \(2\).png");
+  background-size: 79% 69%;
+  background-position-x: 100%;
+  background-position-y: 0%;
+  background-repeat: no-repeat;
+}
+.team_ourterti {
+  padding-top: 118px;
+  .section-subtitle {
+    color: #ff64ae;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+
+  .section-title {
+    color: #091156;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 45px;
+    margin-bottom: 26px;
+  }
+
+  .section-description {
+    color: #8b8b8b;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 24px;
+    margin-bottom: 64px;
+    letter-spacing: 1.6px;
+  }
+}
+.testimonial-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 69px;
+  padding-bottom: 82px;
+  .testimonial-content {
+    text-align: center;
+
+    .customer-photo {
+      width: 73px;
+      height: 73px;
+      object-fit: cover;
+      margin-bottom: 44px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .testimonial-text {
+      color: #8b8b8b;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      letter-spacing: 1.4px;
+      margin-bottom: 34px;
+    }
+
+    .stars {
+      img {
+        width: 169px;
+        height: 25px;
+      }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .prev-arrow,
+  .next-arrow {
+    font-size: 24px;
+    color: #000000;
+    cursor: pointer;
+    padding: 20px;
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+    &.prev-arrow {
+      margin-top: 11px;
+    }
+
+    &.next-arrow {
+      margin-top: 11px;
+    }
+  }
+  @media (max-width: 864px) {
+    br {
+      display: none;
+    }
+    gap: 0px;
+  }
+}
+.team_lastbg {
+  background-image: url("./Element\ Background.png");
+  background-repeat: no-repeat;
+}

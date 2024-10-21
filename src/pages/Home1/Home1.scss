@@ -294,10 +294,11 @@
     margin-top: 22px;
   }
 }
-.contact {
+.contact1 {
   display: flex;
   justify-content: center;
   margin-top: 139px;
+  margin-bottom: 67px;
   gap: 103px;
   @media (max-width: 1150px) {
     flex-direction: column;
@@ -336,6 +337,7 @@
   }
 }
 .form-input11 {
+  background-color: #ffffff;
   border: 1px solid #d9ddfe;
   width: 242.21px;
   height: 61.58px;
@@ -353,6 +355,7 @@
   }
 }
 .form-input12 {
+  background-color: #ffffff;
   border: 1px solid #d9ddfe;
   width: 242.21px;
   height: 61.58px;
@@ -370,6 +373,7 @@
   }
 }
 .form-input2 {
+  background-color: #ffffff;
   border: 1px solid #d9ddfe;
   width: 520px;
   height: 61.58px;
@@ -387,6 +391,7 @@
   }
 }
 .form-input3 {
+  background-color: #ffffff;
   border: 1px solid #d9ddfe;
   width: 520px;
   height: 239.47px;
@@ -409,6 +414,7 @@
   justify-content: center;
 }
 #submit {
+  background-color: #ffffff;
   border-radius: 50px;
   background-color: rgb(255, 100, 174);
   border: 1px solid white;

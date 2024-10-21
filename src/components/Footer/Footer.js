@@ -14,7 +14,7 @@ const Footer = () => {
           <div className="footer-section">
             <div className="footer-left">
               <img
-                src="imgHome1/Footer Logo.png"
+                src="/imgHome1/Footer Logo.png"
                 alt="Footer Logo"
                 className="footer-logo"
               />
@@ -80,11 +80,11 @@ const Footer = () => {
             </div>
           </div>
           <button className="scroll-to-top-button" onClick={scrollToTop}>
-            <img src="imgHome1/ToTop Button.png" alt="Scroll to Top" />
+            <img src="/imgHome1/ToTop Button.png" alt="Scroll to Top" />
           </button>
           <div className="footer-bottom">
             <img
-              src="imgHome1/Social Media.png"
+              src="/imgHome1/Social Media.png"
               alt="Social Media"
               className="social-media-icon"
             />

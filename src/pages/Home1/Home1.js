@@ -136,7 +136,7 @@ const Home1 = () => {
             </div>
           ))}
         </div>
-        <div className="contact">
+        <div className="contact1">
           <div className="contactLeft">
             <img
               src="imgHome1/Contact Animations.png"

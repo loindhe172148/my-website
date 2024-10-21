@@ -1,4 +1,4 @@
-// src/redux/slices/servicesSlice.js
+
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
@@ -18,7 +18,7 @@ const servicesSlice = createSlice({
   },
 });
 
-// Hàm để lấy margin gốc
+
 const getOriginalMargin = (index) => {
   switch (index) {
     case 0: return "-22px";

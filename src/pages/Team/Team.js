@@ -42,11 +42,11 @@ const Team = () => {
       "/imgTeam/unsplash_W7b3eDUb_2I.png",
       "/imgTeam/unsplash_y2T5hT7pWx41.png",
     ];
-    dispatch(setImages(initialImages)); // Thiết lập hình ảnh ban đầu
+    dispatch(setImages(initialImages)); 
   }, [dispatch]);
 
   const handleClick = (index) => {
-    dispatch(setActiveMentor(index)); // Cập nhật mentor đang active khi click
+    dispatch(setActiveMentor(index)); 
   };
 
   const nextImageHandler = () => {

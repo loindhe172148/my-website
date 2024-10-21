@@ -287,10 +287,9 @@
     width: 95%;
   }
   &:active {
-    /* Thêm các thuộc tính khi active */
-    border-color: #000000; /* Thay đổi màu border khi active */
-    box-shadow: 0px 15px 40px 5px #cccccc; /* Thay đổi shadow khi active */
-    transform: scale(0.98); /* Hiệu ứng nhấn nhẹ */
+    border-color: #000000;
+    box-shadow: 0px 15px 40px 5px #cccccc; 
+    transform: scale(0.98); 
   }
 }
 .home2_request {

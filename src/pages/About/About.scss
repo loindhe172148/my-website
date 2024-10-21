@@ -19,7 +19,7 @@
 }
 .about_imagesabout {
   position: relative;
-  display: inline-block; /* Ensures the container size fits the image */
+  display: inline-block; 
 }
 
 .about_imagesabout img {
@@ -33,10 +33,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: none; /* Remove default button background */
-  border: none; /* Remove default button border */
-  padding: 0; /* No padding */
-  cursor: pointer; /* Pointer cursor on hover */
+  background: none; 
+  border: none; 
+  padding: 0; 
+  cursor: pointer; 
 }
 
 .about_play-button img {
@@ -46,7 +46,7 @@
 }
 
 .about_play-button:hover img {
-  opacity: 0.8; /* Optional hover effect to slightly dim the button */
+  opacity: 0.8; 
 }
 .about_sectionslogan h1 {
   font-weight: 600;
@@ -76,7 +76,7 @@
   color: #cacaca;
   letter-spacing: 1.6px;
   position: relative;
-  z-index: 2; /* Ensures content is above the overlay */
+  z-index: 2;
 }
 .about_sectionslogan {
   background-image: url("./img/unsplash_Pe9IXUuC6QU\ \(1\).png");
@@ -89,14 +89,14 @@
     17,
     86,
     0.6
-  ); /* Adds a semi-transparent overlay color */
+  ); 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white; /* Ensure text is readable */
+  color: white;
   text-align: center;
-  padding: 20px; /* Padding for mobile responsiveness */
+  padding: 20px;
 }
 .about_sectionslogan::before {
   content: "";
@@ -110,7 +110,7 @@
     17,
     86,
     0.6
-  ); /* Adds an overlay effect with transparency */
+  ); 
   z-index: 1;
 }
 .about_textvision {

@@ -9,14 +9,14 @@ const Home2 = () => {
   const dispatch = useDispatch();
   const activeBox = useSelector((state) => state.activeBox.activeBox);
 
-  // Định nghĩa các kiểu inline cho hộp "active"
+
   const activeStyle = {
     border: " 1px solid #9ba2e0",
   };
 
   return (
     <div className="home2">
-      {/* Phần About Us */}
+
       <div className="home2_aboutus">
         <div className="home2_aboutus_l">
           <img src="imgHome2/Illustration-1.png" alt="imghome2-1" />
@@ -42,7 +42,7 @@ const Home2 = () => {
         </div>
       </div>
 
-      {/* Phần Main Services */}
+
       <div className="home2_mainservices">
         <h1>Main Services</h1>
         <h2>Our focus services</h2>
@@ -50,7 +50,7 @@ const Home2 = () => {
       </div>
       <div className="home2_bg3">
         <div className="home2_bg1">
-          {/* Phần Three Boxes */}
+
           <div className="home2_threebox">
             <div
               className={`home2_threebox_l ${activeBox === "left" ? "active" : ""}`}
@@ -75,7 +75,7 @@ const Home2 = () => {
 
             <div
               className={`home2_threebox_m ${activeBox === "middle" ? "active" : ""}`}
-              onClick={() => dispatch(setActiveBox("middle"))} // Sử dụng dispatch
+              onClick={() => dispatch(setActiveBox("middle"))} 
               style={activeBox === "middle" ? activeStyle : {}}
             >
               <img src="imgHome2/icon-2 (1).png" alt="Skin treatments" />
@@ -96,7 +96,7 @@ const Home2 = () => {
 
             <div
               className={`home2_threebox_r ${activeBox === "right" ? "active" : ""}`}
-              onClick={() => dispatch(setActiveBox("right"))} // Sử dụng dispatch
+              onClick={() => dispatch(setActiveBox("right"))} 
               style={activeBox === "right" ? activeStyle : {}}
             >
               <img src="imgHome2/icon-3.png" alt="Beauty product" />

@@ -108,9 +108,9 @@ const Contact = () => {
         <div className="contact_threeinfo">
           {infos.map((info, index) => (
             <div
-              className={`contact_info ${activeInfo === index ? "active" : ""}`} // Kết nối Redux state
+              className={`contact_info ${activeInfo === index ? "active" : ""}`} 
               key={index}
-              onClick={() => handleClick(index)} // Kết nối Redux dispatch
+              onClick={() => handleClick(index)} 
             >
               <div className="contact_info1">
                 <img src={info.imgSrc} alt={info.title} />

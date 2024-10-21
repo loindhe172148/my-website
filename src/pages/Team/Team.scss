@@ -145,7 +145,7 @@
   }
 }
 .team_sectionslogan {
-  background-image: url("./unsplash_rE6FqsyyqwM.png");
+  background-image: url("./img/unsplash_rE6FqsyyqwM.png");
   position: relative;
   background-size: cover;
   background-position: center;
@@ -155,7 +155,7 @@
     17,
     86,
     0.6
-  ); /* Adds a semi-transparent overlay color */
+  ); 
   margin-top: 125px;
   padding-top: 181px;
   padding-bottom: 196px;
@@ -163,7 +163,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white; /* Ensure text is readable */
+  color: white; 
   text-align: center;
 }
 .team_sectionslogan::before {
@@ -178,12 +178,12 @@
     17,
     86,
     0.6
-  ); /* Adds an overlay effect with transparency */
+  ); 
   z-index: 1;
 }
 
 .team_bg1 {
-  background-image: url("./Bubble\ BG\ \(2\).png");
+  background-image: url("./img/Bubble\ BG\ \(2\).png");
   background-size: 79% 69%;
   background-position-x: 100%;
   background-position-y: 0%;
@@ -282,6 +282,6 @@
   }
 }
 .team_lastbg {
-  background-image: url("./Element\ Background.png");
+  background-image: url("./img/Element\ Background.png");
   background-repeat: no-repeat;
 }

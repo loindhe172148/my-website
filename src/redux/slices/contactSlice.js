@@ -3,11 +3,11 @@ import { createSlice } from '@reduxjs/toolkit';
 const contactSlice = createSlice({
   name: 'contact',
   initialState: {
-    activeInfo: 0, // Chỉ số thông tin đang hoạt động
+    activeInfo: 0, 
   },
   reducers: {
     setActiveInfo: (state, action) => {
-      state.activeInfo = action.payload; // Cập nhật active info
+      state.activeInfo = action.payload; 
     },
   },
 });

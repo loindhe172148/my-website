@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  activeMentor: 1, // Mặc định là mentor thứ hai
+  activeMentor: 1, 
 };
 
 const mentorSlice = createSlice({

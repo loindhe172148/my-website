@@ -1,8 +1,8 @@
-// src/redux/slices/teamSlice.js
+
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  activeMentor: 1, // Mặc định là mentor thứ hai
+  activeMentor: 1, 
   currentIndex: 0,
 };
 
@@ -20,7 +20,7 @@ const teamSlice = createSlice({
       state.currentIndex = (state.currentIndex - 1 + state.images.length) % state.images.length;
     },
     setImages: (state, action) => {
-      state.images = action.payload; // Lưu danh sách hình ảnh
+      state.images = action.payload; 
     },
   },
 });

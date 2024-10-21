@@ -28,7 +28,7 @@ const mentors = [
 ];
 
 const Home1 = () => {
-  const activeMentor = useSelector((state) => state.mentor.activeMentor); // Lấy trạng thái activeMentor từ Redux
+  const activeMentor = useSelector((state) => state.mentor.activeMentor); 
   const dispatch = useDispatch();
 
   const handleClick = (index) => {

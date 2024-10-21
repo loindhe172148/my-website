@@ -45,11 +45,11 @@
     flex-direction: column;
     align-items: center;
     div:nth-child(1) {
-      order: 2; // First image appears second
+      order: 2; 
     }
 
     div:nth-child(2) {
-      order: 1; // Second image appears first
+      order: 1; 
     }
   }
 }
@@ -89,11 +89,11 @@
     align-items: center;
     margin-right: 0px;
     .services_textvision {
-      order: 1; // This div will appear first
+      order: 1; 
     }
 
     div:not(.services_textvision) {
-      order: 2; // This targets the image div to appear second
+      order: 2; 
     }
   }
 }
@@ -149,7 +149,7 @@
 }
 .services_sectionslogan {
   margin-top: 132px;
-  background-image: url(./unsplash_NPjNtTExSJ4.png);
+  background-image: url("./img/unsplash_NPjNtTExSJ4.png");
   position: relative;
   background-size: cover;
   background-position: center;
@@ -184,7 +184,7 @@
     17,
     86,
     0.6
-  ); /* Adds an overlay effect with transparency */
+  );
   z-index: 1;
 }
 
@@ -254,7 +254,7 @@
 }
 
 .service_faq-answer {
-  max-height: 0; // Collapsed state
+  max-height: 0; 
   visibility: hidden;
   overflow: hidden;
   transition: max-height 0.3s ease;
@@ -274,7 +274,7 @@
     letter-spacing: 1.44px;
   }
   p + p {
-    margin-top: 22px; // Adjust this value to increase or decrease the space
+    margin-top: 22px; 
   }
   @media (max-width: 986px) {
     width: auto;
@@ -299,7 +299,7 @@
 }
 
 .services_sectionoutservices {
-  background-image: url("./Bubble\ BG\ \(1\).png");
+  background-image: url("./img/Bubble\ BG\ \(1\).png");
   background-size: 100% 89%;
   background-position-x: 0%;
   background-position-y: 83%;

@@ -1,8 +1,8 @@
-// src/redux/slices/activeBoxSlice.js
+
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  activeBox: 'middle', // Giá trị mặc định
+  activeBox: 'middle', 
 };
 
 const activeBoxSlice = createSlice({

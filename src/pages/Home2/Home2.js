@@ -16,7 +16,6 @@ const Home2 = () => {
 
   return (
     <div className="home2">
-
       <div className="home2_aboutus">
         <div className="home2_aboutus_l">
           <img src="imgHome2/Illustration-1.png" alt="imghome2-1" />
@@ -54,7 +53,7 @@ const Home2 = () => {
           <div className="home2_threebox">
             <div
               className={`home2_threebox_l ${activeBox === "left" ? "active" : ""}`}
-              onClick={() => dispatch(setActiveBox("left"))} // Sử dụng dispatch
+              onClick={() => dispatch(setActiveBox("left"))} 
               style={activeBox === "left" ? activeStyle : {}}
             >
               <img src="imgHome2/icon-2.png" alt="Beauty consultation" />

@@ -259,6 +259,9 @@
   background-position-x: 100%;
   background-position-y: 126%;
   background-repeat: no-repeat;
+  @media (max-width:1115px) {
+    background-image: none;
+  }
 }
 .about_bg2 {
   background-image: url("./img/Bubble\ BG\ Footer.png");
@@ -266,4 +269,7 @@
   background-position-x: 0%;
   background-position-y: 83%;
   background-repeat: no-repeat;
+  @media (max-width:1108px) {
+    background-image: none;
+  }
 }

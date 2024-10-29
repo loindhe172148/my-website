@@ -188,6 +188,9 @@
   background-position-x: 100%;
   background-position-y: 0%;
   background-repeat: no-repeat;
+  @media (max-width:1115px) {
+    background-image: none;
+  }
 }
 .team_ourterti {
   padding-top: 118px;

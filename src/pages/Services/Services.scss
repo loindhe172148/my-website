@@ -170,6 +170,7 @@
     padding-right: 0px;
     gap: 70px;
     text-align: center;
+    
   }
 }
 .services_sectionslogan::before {
@@ -304,4 +305,7 @@
   background-position-x: 0%;
   background-position-y: 83%;
   background-repeat: no-repeat;
+  @media (max-width:1109px) {
+    background-image: none;
+  }
 }

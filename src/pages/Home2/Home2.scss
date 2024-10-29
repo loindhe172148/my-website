@@ -348,6 +348,9 @@
   height: 100%;
   width: 100%;
   background-position-y: 17%;
+  @media (max-width:930px) {
+    background-image: none;
+  }
 }
 .home2_bg3 {
   background-image: url("./img/Wave Line@2x.png");
@@ -357,6 +360,9 @@
   background-size: 37% 18%;
   background-position-x: 100%;
   background-position-y: 56%;
+  @media (max-width:1135px) {
+    background-image: none;
+  }
 }
 .home2_bg2 {
   background-image: url("./img/BG-Elements.png");
@@ -366,4 +372,7 @@
   background-size: 22% 44%;
   background-position-x: 0%;
   background-position-y: 116%;
+  @media (max-width:1135px) {
+    background-image: none;
+  }
 }
